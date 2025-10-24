@@ -3,4 +3,5 @@ public class Game {
     public boolean isBonus(){
         return bonus;
     }
+
 }
