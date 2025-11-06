@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Game {
     private boolean bonus = false;
     private Level levelOne = new Level();
@@ -7,7 +8,7 @@ public class Game {
     public boolean isBonus(){
         return bonus;
     }
-    public void setup(boolean[] goals, int[] points, boolean bonus){
+    public Game(boolean[] goals, int[] points, boolean bonus){
         for(int i = 0; i<3;i++){
             levels[i].setGoalReached(goals[i]);
             levels[i].setPoints(points[i]);
@@ -29,5 +30,8 @@ public class Game {
             }
         }
         return points;
+   }
+   public void play(){
+
    }
 }
