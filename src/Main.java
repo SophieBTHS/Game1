@@ -8,6 +8,9 @@ public class Main {
             Game g = new Game(goals, points, totalGoals[i+3]);
             System.out.println(g.getScore());
         }
+        Game game = new Game();
+        //game.play();
+        game.playManyTimes(4);
     }
 
 }
